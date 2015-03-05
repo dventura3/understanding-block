@@ -1,0 +1,143 @@
+{
+	"what" : [
+		{
+			"name" : "-",
+			"semantic" : ""
+		},
+		{
+			"name" : "Temperature",
+			"semantic" : "dbpedia:Temperature"
+		},
+		{
+			"name" : "Light",
+			"semantic" : "dbpedia:Light"
+		},
+		{
+			"name" : "Humidity",
+			"semantic" : "dbpedia:Humidity"
+		},
+		{
+			"name" : "Color Light",
+			"semantic" : "dbpedia:Color"
+		},
+		{
+			"name" : "Light Intensity",
+			"semantic" : "flux:Brightness"
+		}
+	],
+	"whose" : [
+		{
+			"name" : "-",
+			"semantic" : ""
+		},
+		{
+			"name" : "Lamp",
+			"semantic" : "dbpedia:Lamp"
+		},
+		{
+			"name" : "Air Conditioner",
+			"semantic" : "dbpedia:Air_Conditioner"
+		},
+		{
+			"name" : "Fan",
+			"semantic" : "dbpedia:Mechanical_fan"
+		},
+		{
+			"name" : "Heater",
+			"semantic" : "dbpedia:Heater"
+		},
+		{
+			"name" : "Oven",
+			"semantic" : "dbpedia:Oven"
+		},
+		{
+			"name" : "Sensor",
+			"semantic" : "ssn:Sensor"
+		},
+		{
+			"name" : "Multicolor Lamp",
+			"semantic" : "dbpedia:Light-emitting_diode"
+		}
+	],
+	"where" : [
+		{
+			"name" : "-",
+			"semantic" : ""
+		},
+		{
+			"name" : "Kitchen",
+			"semantic" : "dogont:Kitchen"
+		},
+		{
+			"name" : "Bathroom",
+			"semantic" : "dogont:Bathroom"
+		},
+		{
+			"name" : "Bedroom",
+			"semantic" : "dogont:Bedroom"
+		}
+	],
+	"operation" : [
+		{
+			"name" : ">",
+			"semantic" : ":hasSwitchActionSet"
+		},
+		{
+			"name" : "<",
+			"semantic" : ":hasSwitchActionSet"
+		},
+		{
+			"name" : "=",
+			"semantic" : ":hasSwitchActionSet"
+		},
+		{
+			"name" : ">=",
+			"semantic" : ":hasSwitchActionSet"
+		},
+		{
+			"name" : "<=",
+			"semantic" : ":hasSwitchActionSet"
+		},
+		{
+			"name" : "Watching",
+			"semantic" : ":watching"
+		},
+		{
+			"name" : "Playing",
+			"semantic" : ":playing"
+		}
+	],
+	"value" : [
+		{
+			"name" : "-",
+			"semantic" : ""
+		},
+		{
+			"name" : "On",
+			"semantic" : "bonsai:SwitchAction"
+		},
+		{
+			"name" : "Off",
+			"semantic" : "bonsai:SwitchAction"
+		},
+		{
+			"name" : "{User Input}",
+			"semantic" : ""
+		}
+	],
+	"unit" : [
+		{
+			"name" : "-",
+			"semantic" : ""
+		},
+		{
+			"name" : "Degree Celsius",
+			"semantic" : "unit:DegreeCelsius"
+		},
+		{
+			"name" : "RBG Color Format",
+			"semantic" : "dbpedia:RGB_color_model"
+		}
+	],
+	"time" : []
+}

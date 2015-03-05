@@ -1,0 +1,235 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a href ng-click="executeAction()">Execute Action</a></li>
+  </ul> 
+  <h3 class="text-muted">Action</h3>
+</div>
+
+	
+<!--
+
+<div class="login-box" ng-hide="logged">
+		<h2><font color="red">Error! You aren't Logged!</font></h2>
+		<br>
+		<a href="#/" class="btn_red">Login</a>
+</div>
+
+<div class="container" ng-hide="!logged">
+	
+	<div ng-show="loading">
+		<img ng-src="/images/load.gif" />
+	</div>
+	<div class="header">
+		<div id="header-lg" class="visible-lg">
+			<diV class="col-lg-7 header-title">Hi
+				<span class="label label-info"> {{userData.name}}</span>
+			</div>
+			<div class="col-lg-1 header-ele">
+				<button class="btn btn-primary" ng-click="addRule()">Add</button>
+			</div>
+			<div class="col-lg-1 header-ele">
+				<button class="btn btn-danger" ng-click="showButtonToRemoveRule()" >Delete</button>
+			</div>
+			<div class="col-lg-1 header-ele">
+				<button class="btn btn-success" ng-click="saveRules()">Save</button>
+			</div>
+			<div class="col-lg-1 header-ele">
+				<button class="btn btn-default" ng-click="logout()">Logout</button>
+			</div>
+		</div>
+
+		<div class="legend">
+			<div class="col-sm-3 legend-ele">
+				<span class="label label-info">Device</span>
+			</div>
+			<div class="col-sm-3 legend-ele" >
+				<span class="label label-info">Gesture</span>
+			</div>
+			<div class="col-sm-3 legend-ele">
+				<span class="label label-info">Object</span>
+			</div>
+			<div class="col-sm-3 legend-ele">
+				<span class="label label-info">Action</span>
+			</div>
+		</div>
+
+		<div id="header-sm" class="visible-sm">
+			<div class="col-sm-12 header-title">Hi
+				<span class="label label-info"> {{userData.name}}</span>
+			</div>
+			<div class="col-sm-offset-2 col-sm-2 header-ele">
+				<button class="btn btn-primary" ng-click="addRule()">Add</button>
+			</div>
+			<div class="col-sm-2 header-ele">
+				<button class="btn btn-danger" ng-click="showButtonToRemoveRule()">Delete</button>
+			</div>
+			<div class="col-sm-2 header-ele">
+				<button class="btn btn-success" ng-click="saveRules()">Save</button>
+			</div>
+			<div class="col-sm-2 header-ele">
+				<button class="btn btn-default" ng-click="logout()">Logout</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content-scroll">
+		<div class="container-fluid single-rule">
+			
+			<div class="row {{emphasizeNew($index)}}" ng-repeat="rule in currentRules">
+				<div class="col-sm-12 button-block" ng-show="removing">
+					<img class="delete-img" src="images/delete.png" ng-click="removeRule($index)"></img>
+				</div>
+				<div class="col-sm-3 arrow-ele">
+					<img class="arrow-img" src="images/up.png" ng-click="arrowManagement('device', $index, 'UP')"></img>
+				</div>
+				<div class="col-sm-3 arrow-ele" >
+					<img class="arrow-img" src="images/up.png" ng-click="arrowManagement('gesture', $index, 'UP')"></img>
+				</div>
+				<div class="col-sm-3 arrow-ele">
+					<img class="arrow-img" src="images/up.png" ng-click="arrowManagement('object', $index, 'UP')"></img>
+				</div>
+				<div class="col-sm-3 arrow-ele">
+					<img class="arrow-img" src="images/up.png" ng-click="arrowManagementForAction($index, 'UP')"></img>
+				</div>
+				
+
+				<div class="col-sm-3 col">
+					<div class="rule-block">
+						<div class="rule-picture">
+							<img class="rule-picture-img" ng-src="{{data.devices[rule.device.index].picture}}"></img>
+						</div>
+						<div class="block-description">
+							{{data.devices[rule.device.index].description}}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col">
+					<div class="rule-block">
+						<div class="rule-picture">
+							<img class="rule-picture-img" ng-src="{{data.gestures[rule.gesture.index].picture}}"></img>
+						</div>
+						<div class="block-description">
+							{{data.gestures[rule.gesture.index].description}}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col">
+					<div class="rule-block">
+						<div class="rule-picture">
+							<img class="rule-picture-img" ng-src="{{data.objects[rule.object.index].picture}}"></img>
+						</div>
+						<div class="block-description">
+							{{data.objects[rule.object.index].description}}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col">
+					<div class="rule-block">
+						<div class="block-action">
+							
+							<p>{{data.objects[rule.object.index].actions[rule.action.index].description}}</p>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="col-sm-3 arrow-ele">
+					<img class="arrow-img" src="images/down.png" ng-click="arrowManagement('device', $index, 'DOWN')"></img>
+				</div>
+				<div class="col-sm-3 arrow-ele">
+					<img class="arrow-img" src="images/down.png" ng-click="arrowManagement('gesture', $index, 'DOWN')"></img>
+				</div>
+				<div class="col-sm-3 arrow-ele">
+					<img class="arrow-img" src="images/down.png" ng-click="arrowManagement('object', $index, 'DOWN')"></img>
+				</div>
+				<div class="col-sm-3 arrow-ele">
+					<img class="arrow-img" src="images/down.png" ng-click="arrowManagementForAction($index, 'DOWN')"></img>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">Powered by JOL WAVE Team</div>
+</div>
+
+
+-->
+
+
+
+
+
+
+<!-- <div class="exernal-content" ng-hide="logged">
+	<div class="login-box">
+		<h2><font color="red">Error! You aren't Logged!</font></h2>
+		<br>
+		<a href="#/" class="btn_red">Login</a>
+	</div>
+</div>
+
+<div class="unique-container" ng-hide="!logged">
+-->
+
+	<div class="mycontent">
+		<div ng-show="loading">
+			<img ng-src="/images/load.gif" />
+		</div>
+
+		<div class="wrapper-rules-remove" ng-show="!loading">
+			<div class="table-row">
+					<div class="rule">
+						<div id="what" class="block-rule">
+							<img src="/images/arrow_up.png" class="arrow-block" ng-click="arrowManagement('what', 'UP')" />
+							<div class="action-block"><p>{{data.what[currentIndexAction.what].name}}</p></div>
+							<div class="block-description"><b>What</b></div>
+							<img src="/images/arrow_down.png" class="arrow-block" ng-click="arrowManagement('what', 'DOWN')" />
+						</div>
+						<div id="whose" class="block-rule">
+							<img src="/images/arrow_up.png" class="arrow-block" ng-click="arrowManagement('whose', 'UP')" />
+							<div class="action-block"><p>{{data.whose[currentIndexAction.whose].name}}</p></div>
+							<div class="block-description"><b>Whose</b></div>
+							<img src="/images/arrow_down.png" class="arrow-block" ng-click="arrowManagement('whose', 'DOWN')" />
+						</div>
+						<div id="where" class="block-rule">
+							<img src="/images/arrow_up.png" class="arrow-block" ng-click="arrowManagement('where', 'UP')" />
+							<div class="action-block"><p>{{data.where[currentIndexAction.where].name}}</p></div>
+							<div class="block-description"><b>Where</b></div>
+							<img src="/images/arrow_down.png" class="arrow-block" ng-click="arrowManagement('where', 'DOWN')" />
+						</div>
+						<div id="operation" class="block-rule">
+							<img src="/images/arrow_up.png" class="arrow-block" ng-click="arrowManagement('operation', 'UP')" />
+							<div class="action-block"><p>{{data.operation[currentIndexAction.operation].name}}</p></div>
+							<div class="block-description"><b>Operation</b></div>
+							<img src="/images/arrow_down.png" class="arrow-block" ng-click="arrowManagement('operation', 'DOWN')" />
+						</div>
+						<!--  USER INPUT OR NOT? -->
+						<div id="value" class="block-rule" ng-show="!isUserInput">
+							<img src="/images/arrow_up.png" class="arrow-block" ng-click="arrowManagement('value', 'UP')" />
+							<div class="action-block"><p>{{data.value[currentIndexAction.value].name}}</p></div>
+							<div class="block-description"><b>Value</b></div>
+							<img src="/images/arrow_down.png" class="arrow-block" ng-click="arrowManagement('value', 'DOWN')" />
+						</div>
+						<div id="value" class="block-rule" ng-show="isUserInput">
+							<img src="/images/arrow_up.png" class="arrow-block" ng-click="arrowManagement('value', 'UP')" />
+							<div class="userinput-block">
+								<p>{{data.value[currentIndexAction.value].name}}</p>
+								<input placeholder="User Input" type="text" ng-model="userInput" size="15" >
+							</div>
+							<div class="block-description"><b>Value</b></div>
+							<img src="/images/arrow_down.png" class="arrow-block" ng-click="arrowManagement('value', 'DOWN')" />
+						</div>
+						<!--  //END USER INPUT OR NOT? -->
+						<div id="unit" class="block-rule">
+							<img src="/images/arrow_up.png" class="arrow-block" ng-click="arrowManagement('unit', 'UP')" />
+							<div class="action-block"><p>{{data.unit[currentIndexAction.unit].name}}</p></div>
+							<div class="block-description"><b>Unit</b></div>
+							<img src="/images/arrow_down.png" class="arrow-block" ng-click="arrowManagement('unit', 'DOWN')" />
+						</div>
+					</div>
+			</div>
+		</div>
+
+	</div>
+
+<!-- </div> -->

@@ -1,0 +1,89 @@
+/* Thanks to http://css3buttongenerator.com/ */
+
+/* RED BUTTON */
+.btn_red {
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -moz-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -ms-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -o-linear-gradient(top, #d93434, #b82b2b);
+  background-image: linear-gradient(to bottom, #d93434, #b82b2b);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn_red:hover {
+  background: #fc3c3c;
+  background-image: -webkit-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: -moz-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: -ms-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: -o-linear-gradient(top, #fc3c3c, #d93434);
+  background-image: linear-gradient(to bottom, #fc3c3c, #d93434);
+  text-decoration: none;
+}
+
+
+
+/* GREEN BUTTON */
+.btn_green {
+  background: #34d952;
+  background-image: -webkit-linear-gradient(top, #34d952, #2cb846);
+  background-image: -moz-linear-gradient(top, #34d952, #2cb846);
+  background-image: -ms-linear-gradient(top, #34d952, #2cb846);
+  background-image: -o-linear-gradient(top, #34d952, #2cb846);
+  background-image: linear-gradient(to bottom, #34d952, #2cb846);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn_green:hover {
+  background: #3cfa65;
+  background-image: -webkit-linear-gradient(top, #3cfa65, #34d952);
+  background-image: -moz-linear-gradient(top, #3cfa65, #34d952);
+  background-image: -ms-linear-gradient(top, #3cfa65, #34d952);
+  background-image: -o-linear-gradient(top, #3cfa65, #34d952);
+  background-image: linear-gradient(to bottom, #3cfa65, #34d952);
+  text-decoration: none;
+}
+
+
+
+/* GRAY BUTTON */
+.btn_gray {
+  background: #b8b6b8;
+  background-image: -webkit-linear-gradient(top, #b8b6b8, #8a8a8a);
+  background-image: -moz-linear-gradient(top, #b8b6b8, #8a8a8a);
+  background-image: -ms-linear-gradient(top, #b8b6b8, #8a8a8a);
+  background-image: -o-linear-gradient(top, #b8b6b8, #8a8a8a);
+  background-image: linear-gradient(to bottom, #b8b6b8, #8a8a8a);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn_gray:hover {
+  background: #d4d4d4;
+  background-image: -webkit-linear-gradient(top, #d4d4d4, #c4c4c4);
+  background-image: -moz-linear-gradient(top, #d4d4d4, #c4c4c4);
+  background-image: -ms-linear-gradient(top, #d4d4d4, #c4c4c4);
+  background-image: -o-linear-gradient(top, #d4d4d4, #c4c4c4);
+  background-image: linear-gradient(to bottom, #d4d4d4, #c4c4c4);
+  text-decoration: none;
+}

@@ -1,0 +1,174 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Bitter-Regular.ttf);
+}
+
+body{
+	font-family: myFont;
+}
+
+@media (max-width: 1300px) {
+	body{font-size: 16pt;}
+    .header{font-size: 22px;}
+    .header-title{font-size: 40px;}
+    #header-lg{height: 180px;}
+    .content-scroll{margin-top: 150px;}
+    .legend{top: 120px;}
+    .btn{width:90px;font-size: 16pt;}
+    .block-action{font-size: 26pt;}
+}
+
+@media (max-width: 810px) {
+	body{font-size: 12pt;}
+    .header{font-size: 22px;}
+    .header-title{font-size: 30px;}
+    #header-sm{height: 230px;}
+    .content-scroll{margin-top: 210px;}
+    .legend{top: 180px;}
+    .btn{width:90px;font-size: 16pt;}
+    .header-ele{margin-top: 15px;}
+    .block-action{font-size: 16pt;}
+}
+
+.container{
+	padding-left: 5px;
+}
+.header{
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	padding-top: 10px;
+	z-index: 2;
+}
+
+#header-sm{
+	text-align: center;
+}
+
+#header-lg{}
+
+.header-ele{
+	text-align: center;
+}
+
+.header-title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.legend{
+	width: 89%;
+	position: fixed;
+	z-index: 2;
+}
+
+.legend-ele{
+	text-align: center;
+	font-size: 24pt;
+}
+
+.footer{
+	padding: 20px;
+	text-align: right;
+}
+
+.content-scroll{
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+}
+
+.newrule{
+	background-color: green;
+}
+
+.savedrule{
+	background-color: midnightblue;
+}
+
+.row{
+	/*background-color: green;*/
+	margin-top: 16px;
+	border: 2px solid darkgray;
+	border-radius: 20px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.col{
+	padding: 8px;
+	text-align: center;
+
+}
+
+.rule-block{
+	background-color: #5BC0DE;
+	width: 100%;
+	height: 244px;
+	border: 2px solid darkgray;
+	border-radius: 10px;
+}
+
+.single-rule{
+	margin-top: 20px;
+}
+
+.button-block{
+	text-align: center;
+}
+
+.delete-img{
+	height:50px;
+}
+
+.arrow-img{
+	width: 140px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+	
+.rule-picture{
+	height: 160px;
+}
+
+.rule-picture-img{
+	height: 100%;
+}
+
+.block-name{
+	margin-top: 5px;
+	height: 45px;
+	color: white;
+}
+
+.block-description{
+	padding: 3px;
+	margin-top: 5px;
+	height: 75px;
+	background-color: aliceblue;
+	overflow: auto;
+	border: 1px solid darkgray;
+
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.block-action{
+	padding: 10px;
+	display: table;
+	width: 100%;
+  height: 100%;
+}
+
+.block-action p {
+  display: table-cell;
+  margin: 0;
+  color: white;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+.arrow-ele{
+	text-align: center;
+}

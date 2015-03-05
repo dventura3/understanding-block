@@ -1,0 +1,191 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+
+@media (min-width: 768px) {
+  .container {
+     max-width: 1030px;
+     padding-right: 0px;
+  	 padding-left: 0px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.content-description {
+	height:60px;
+}
+
+.arrow-block {
+	height:30px;
+	margin: 5px 0px 5px 0px;
+}
+
+.action-block {
+	margin: 5px 10px 5px 10px;
+	font-size: 25px;
+  width: 140px; 
+  height: 140px; 
+  display: table; 
+}
+
+.action-block p {
+	display: table-cell; 
+  vertical-align: middle; 
+  text-align: center; 
+}
+
+.userinput-block {
+  margin: 5px 10px 5px 10px;
+  padding-top: 40px;
+  width: 140px; 
+  height: 140px;
+}
+
+.image-block {
+	width:140px;
+	height:140px;
+	margin: 5px 0px 5px 0px;
+}
+
+.block-rule {
+	text-align: center; /* orizzontale */
+	float:left;
+	width:160px;
+	margin:10px 5px 10px 5px;
+	border-style: solid;
+  border-color: #337ab7;
+}
+
+.rule {
+	text-align: center;
+	float:left;
+	/* display:block;
+	clear:both;
+	*/
+	display:table-cell;
+	border-style: solid;
+  border-color: #dddddd;
+  border-width: 2px;
+  margin:0px 0px 25px 0px;
+  padding:5px 0px 5px 0px;
+}
+
+.img-remove {
+	width:30px;
+	height:30px;
+}
+
+/* USED TO CENTER VERTICALLY AND HORIZONTALLY
+.remove {
+	text-align: center;
+	display:table-cell;
+	vertical-align: middle;
+	width:140px;
+}
+*/
+
+.remove {
+	text-align: center;
+	display:table-cell;
+	vertical-align: middle;
+	max-width:140px;
+	min-width:40px;
+	float:left;
+	top:150px;
+	left:10px;
+	position:relative;
+}
+
+.table-row {
+	display:table-row;
+}
+
+.wrapper-rules-remove {
+	display:table;
+	width: 100%;
+}
+
+.mycontent {
+	text-align: center;
+	clear:both;
+}
+
+.settings-rule {
+	float:right;
+	clear:both;
+	margin:0px 0px 35px 0px;
+}
+
+.unique-container{
+	clear:both;
+}

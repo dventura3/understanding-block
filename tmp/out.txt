@@ -1,0 +1,1 @@
+curl -d '{"data":{"what":"dbpedia:Temperature","operation":">=","value":"22","unit":"unit:DegreeCelsius"},"type":"action"}' -H 'Content-Type: application/json' http://127.0.0.1:3740/se/discoveryObjs
